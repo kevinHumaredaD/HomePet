@@ -12,6 +12,7 @@ namespace HomePet.Models
         [EmailAddress]
         public string Email { get; set; }   
         public string Foto {get; set;}     
+        [DataType(DataType.Password)]
         public string Password { get; set; }
         
         

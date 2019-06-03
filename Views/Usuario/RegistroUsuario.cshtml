@@ -6,8 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
-    <div class="container">
+<body>    
+    <div class="container">  
+        <h1>Registro de Usuario</h1>   
+        <form asp-action="registrarusuario" method="post">
+            <div>
+                <label>Nombre:</label>
+                <input asp-for="Nombre">  
+            </div>
+            <div>
+                <label>Apellidos:</label>
+                <input asp-for="Apellidos">  
+            </div>
+            <div>
+                <label>Edad:</label>
+                <input asp-for="Edad">  
+            </div>
+            <div>
+                <label>Email:</label>
+                <input asp-for="Email">  
+            </div>
+            <div>
+                <label>Foto:</label>
+                <input asp-for="Foto">  
+            </div>
+            <div>
+                <label>Password:</label>
+                <input asp-for="Password">  
+            </div>            
+            <button type="submit">Registrar Usuario</button>
+
+        </form>   
         
     </div>
 </body>
